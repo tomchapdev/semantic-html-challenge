@@ -1,11 +1,33 @@
-/* CSS files add styling rules to your content */
+/* General */
 
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+/*.table__container {
+  width: 400px;
+}*/
+
+/* Table General */
+.table__main {
+  width: 100%;
 }
+
+/* Table Head & Foot */
+.table__head, .table__foot {
+  background-image: url(assets/leopardskin.jpg);
+}
+
+/* Table Body */
+.table__body {
+  background-image: url(assets/noise.png);
+}
+.table__body tr:nth-child(odd) {
+  background-color: #ff33cc;
+}
+.table__body tr:nth-child(even) {
+  background-color: #e495e4;
+}
+
+/* Table Foot */
