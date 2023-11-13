@@ -3,7 +3,6 @@
   font-family: rocksalt;
   src:url(assets/RockSalt-Regular.ttf);
 }
-
 body {
   font-family: rocksalt, "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
@@ -12,9 +11,9 @@ body {
 /* Table General */
 .table__main {
   width: 100%;
-  table-layout: auto;
   border-collapse: collapse;
   text-align: center;
+  border: 3px solid #800080;
 }
 
 /* Table Head & Foot */
@@ -22,11 +21,15 @@ body {
   background-image: url(assets/leopardskin.jpg);
   color:white;
 }
+.table__head th, .table__foot td {
+  border: 3px solid #800080;
+}
 
 /* Table Body */
 .table__body {
   background-image: url(assets/noise.png);
   font-family: "Helvetica Neue", helvetica;
+  border-width: 0;
 }
 .table__body tr:nth-child(odd) {
   background-color: #ff33cc;
@@ -39,3 +42,14 @@ body {
 }
 
 /* Table Foot */
+.table__foot td:first-child {
+  text-align: right;
+}
+.table__foot td:last-child {
+  text-align: left;
+}
+
+/* Table Description */
+.table__description {
+  text-align: right;
+}
