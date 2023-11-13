@@ -1,33 +1,41 @@
 /* General */
-
-body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+@font-face {
+  font-family: rocksalt;
+  src:url(assets/RockSalt-Regular.ttf);
 }
 
-/*.table__container {
-  width: 400px;
-}*/
+body {
+  font-family: rocksalt, "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
 
 /* Table General */
 .table__main {
   width: 100%;
+  table-layout: auto;
+  border-collapse: collapse;
+  text-align: center;
 }
 
 /* Table Head & Foot */
 .table__head, .table__foot {
   background-image: url(assets/leopardskin.jpg);
+  color:white;
 }
 
 /* Table Body */
 .table__body {
   background-image: url(assets/noise.png);
+  font-family: "Helvetica Neue", helvetica;
 }
 .table__body tr:nth-child(odd) {
   background-color: #ff33cc;
 }
 .table__body tr:nth-child(even) {
   background-color: #e495e4;
+}
+.table__body td:first-child {
+  font-weight: bold;
 }
 
 /* Table Foot */
