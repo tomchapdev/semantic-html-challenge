@@ -10,6 +10,7 @@ body {
 
 /* Table General */
 .table__main {
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   text-align: center;
@@ -49,7 +50,8 @@ body {
   text-align: left;
 }
 
-/* Table Description */
-.table__description {
+/* Table Caption */
+.table__caption {
+  caption-side: bottom;
   text-align: right;
 }
