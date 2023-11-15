@@ -13,17 +13,26 @@ body {
   table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
-  text-align: center;
   border: 3px solid #800080;
+  text-align: center;
+  font-size: 70%;
 }
 
 /* Table Head & Foot */
 .table__head, .table__foot {
-  background-image: url(assets/leopardskin.jpg);
-  color:white;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  ), url(assets/leopardskin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .table__head th, .table__foot td {
   border: 3px solid #800080;
+  padding: 1.5%;
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 /* Table Body */
@@ -41,6 +50,9 @@ body {
 .table__body td:first-child {
   font-weight: bold;
 }
+.table__body td {
+  padding: 1%;
+}
 
 /* Table Foot */
 .table__foot td:first-child {
@@ -48,10 +60,12 @@ body {
 }
 .table__foot td:last-child {
   text-align: left;
+  font-family: "Helvetica Neue", helvetica;
 }
 
 /* Table Caption */
 .table__caption {
   caption-side: bottom;
   text-align: right;
+  font-style: italic;
 }
